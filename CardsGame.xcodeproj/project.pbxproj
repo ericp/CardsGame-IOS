@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		07DC95E12B516D0C006469C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC95E02B516D0C006469C6 /* AppDelegate.swift */; };
 		07DC95E32B516D0C006469C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC95E22B516D0C006469C6 /* SceneDelegate.swift */; };
-		07DC95E52B516D0C006469C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC95E42B516D0C006469C6 /* ViewController.swift */; };
 		07DC95E82B516D0C006469C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DC95E62B516D0C006469C6 /* Main.storyboard */; };
 		07DC95EA2B516D0D006469C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DC95E92B516D0D006469C6 /* Assets.xcassets */; };
 		07DC95ED2B516D0D006469C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DC95EB2B516D0D006469C6 /* LaunchScreen.storyboard */; };
 		07DC95F82B516D0D006469C6 /* CardsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC95F72B516D0D006469C6 /* CardsGameTests.swift */; };
 		07DC96022B516D0D006469C6 /* CardsGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC96012B516D0D006469C6 /* CardsGameUITests.swift */; };
 		07DC96042B516D0D006469C6 /* CardsGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC96032B516D0D006469C6 /* CardsGameUITestsLaunchTests.swift */; };
+		07DC96112B516EFF006469C6 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC96102B516EFF006469C6 /* CardSelectionVC.swift */; };
+		07DC96132B518475006469C6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DC96122B518475006469C6 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		07DC95DD2B516D0C006469C6 /* CardsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC95E02B516D0C006469C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DC95E22B516D0C006469C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07DC95E42B516D0C006469C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07DC95E72B516D0C006469C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07DC95E92B516D0D006469C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DC95EC2B516D0D006469C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		07DC95FD2B516D0D006469C6 /* CardsGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC96012B516D0D006469C6 /* CardsGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGameUITests.swift; sourceTree = "<group>"; };
 		07DC96032B516D0D006469C6 /* CardsGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07DC96102B516EFF006469C6 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		07DC96122B518475006469C6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,11 @@
 			children = (
 				07DC95E02B516D0C006469C6 /* AppDelegate.swift */,
 				07DC95E22B516D0C006469C6 /* SceneDelegate.swift */,
-				07DC95E42B516D0C006469C6 /* ViewController.swift */,
+				07DC96102B516EFF006469C6 /* CardSelectionVC.swift */,
+				07DC96122B518475006469C6 /* Card.swift */,
 				07DC95E62B516D0C006469C6 /* Main.storyboard */,
-				07DC95E92B516D0D006469C6 /* Assets.xcassets */,
 				07DC95EB2B516D0D006469C6 /* LaunchScreen.storyboard */,
+				07DC95E92B516D0D006469C6 /* Assets.xcassets */,
 				07DC95EE2B516D0D006469C6 /* Info.plist */,
 			);
 			path = CardsGame;
@@ -258,9 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07DC95E52B516D0C006469C6 /* ViewController.swift in Sources */,
 				07DC95E12B516D0C006469C6 /* AppDelegate.swift in Sources */,
 				07DC95E32B516D0C006469C6 /* SceneDelegate.swift in Sources */,
+				07DC96112B516EFF006469C6 /* CardSelectionVC.swift in Sources */,
+				07DC96132B518475006469C6 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
